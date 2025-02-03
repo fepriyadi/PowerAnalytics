@@ -55,13 +55,13 @@ Pod::Spec.new do |s|
         mkdir PowerAnalytics/lib
 
         # use this lib locally to test sdk func. only
-        cp /Users/fepriyadi/Documents/SDK/PODS/j2objc/j2objc_lib/lib/libjre_emul.a PowerAnalytics/lib
-        cp /Users/fepriyadi/Documents/SDK/PODS/j2objc/j2objc_lib/lib/libjson.a PowerAnalytics/lib
+        # cp /Users/fepriyadi/Documents/SDK/PODS/j2objc/j2objc_lib/lib/libjre_emul.a PowerAnalytics/lib
+        # cp /Users/fepriyadi/Documents/SDK/PODS/j2objc/j2objc_lib/lib/libjson.a PowerAnalytics/lib
 
         # ready to download j2objc lib and publish after test locally successful
-        # curl -OL https://github.com/fepriyadi/MNCAnalytics/releases/download/1.2.3/lib.zip
-        # unzip -d PowerAnalytics/lib lib.zip
-        # rm lib.zip
+        curl -OL https://github.com/fepriyadi/MNCAnalytics/releases/download/1.2.3/lib.zip
+        unzip -d PowerAnalytics/lib lib.zip
+        rm lib.zip
       fi
 
       echo "Creating framework"
