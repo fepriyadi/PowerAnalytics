@@ -13,11 +13,11 @@
 #error "TTask must be compiled with ARC (-fobjc-arc)"
 #endif
 
-@implementation ComPowerAnalyticsTTask
+@implementation TTask
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
 - (instancetype)init {
-  ComPowerAnalyticsTTask_init(self);
+  TTask_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
@@ -77,22 +77,24 @@ J2OBJC_IGNORE_DESIGNATED_END
   methods[7].selector = @selector(onProgressUpdateWithNSObjectArray:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "ttDuring", "[LNSObject;", "ttUpdate", "doInBackground", "onPostExecute", "LNSObject;", "onProgressUpdate", "Landroid/os/AsyncTask<Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;>;" };
-  static const J2ObjcClassInfo _ComPowerAnalyticsTTask = { "TTask", "com.power.analytics", ptrTable, methods, NULL, 7, 0x1, 8, 0, -1, -1, -1, 7, -1 };
-  return &_ComPowerAnalyticsTTask;
+  static const J2ObjcClassInfo _TTask = { "TTask", "com.power.analytics", ptrTable, methods, NULL, 7, 0x1, 8, 0, -1, -1, -1, 7, -1 };
+  return &_TTask;
 }
 
 @end
 
-void ComPowerAnalyticsTTask_init(ComPowerAnalyticsTTask *self) {
+void TTask_init(TTask *self) {
   AndroidOsAsyncTask_init(self);
 }
 
-ComPowerAnalyticsTTask *new_ComPowerAnalyticsTTask_init() {
-  J2OBJC_NEW_IMPL(ComPowerAnalyticsTTask, init)
+TTask *new_TTask_init() {
+  J2OBJC_NEW_IMPL(TTask, init)
 }
 
-ComPowerAnalyticsTTask *create_ComPowerAnalyticsTTask_init() {
-  J2OBJC_CREATE_IMPL(ComPowerAnalyticsTTask, init)
+TTask *create_TTask_init() {
+  J2OBJC_CREATE_IMPL(TTask, init)
 }
 
-J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComPowerAnalyticsTTask)
+J2OBJC_CLASS_TYPE_LITERAL_SOURCE(TTask)
+
+J2OBJC_NAME_MAPPING(TTask, "com.power.analytics", "")

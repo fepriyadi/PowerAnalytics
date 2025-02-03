@@ -13,8 +13,8 @@
 #endif
 #undef RESTRICT_TTask
 
-#if !defined (ComPowerAnalyticsTTask_) && (INCLUDE_ALL_TTask || defined(INCLUDE_ComPowerAnalyticsTTask))
-#define ComPowerAnalyticsTTask_
+#if !defined (TTask_) && (INCLUDE_ALL_TTask || defined(INCLUDE_TTask))
+#define TTask_
 
 #define RESTRICT_AndroidOsAsyncTask 1
 #define INCLUDE_AndroidOsAsyncTask 1
@@ -22,7 +22,7 @@
 
 @class IOSObjectArray;
 
-@interface ComPowerAnalyticsTTask : AndroidOsAsyncTask
+@interface TTask : AndroidOsAsyncTask
 
 #pragma mark Public
 
@@ -46,15 +46,17 @@
 
 @end
 
-J2OBJC_EMPTY_STATIC_INIT(ComPowerAnalyticsTTask)
+J2OBJC_EMPTY_STATIC_INIT(TTask)
 
-FOUNDATION_EXPORT void ComPowerAnalyticsTTask_init(ComPowerAnalyticsTTask *self);
+FOUNDATION_EXPORT void TTask_init(TTask *self);
 
-FOUNDATION_EXPORT ComPowerAnalyticsTTask *new_ComPowerAnalyticsTTask_init(void) NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT TTask *new_TTask_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComPowerAnalyticsTTask *create_ComPowerAnalyticsTTask_init(void);
+FOUNDATION_EXPORT TTask *create_TTask_init(void);
 
-J2OBJC_TYPE_LITERAL_HEADER(ComPowerAnalyticsTTask)
+J2OBJC_TYPE_LITERAL_HEADER(TTask)
+
+@compatibility_alias ComPowerAnalyticsTTask TTask;
 
 #endif
 

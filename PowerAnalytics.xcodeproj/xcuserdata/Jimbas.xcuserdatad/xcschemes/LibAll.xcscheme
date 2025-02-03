@@ -17,7 +17,7 @@
                BlueprintIdentifier = "9CEB6D841ABB348900F38A9E"
                BuildableName = "LibAll"
                BlueprintName = "LibAll"
-               ReferencedContainer = "container:MncDigitalAnalytics.xcodeproj">
+               ReferencedContainer = "container:PowerAnalytics.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,7 +45,7 @@
             BlueprintIdentifier = "9CEB6D841ABB348900F38A9E"
             BuildableName = "LibAll"
             BlueprintName = "LibAll"
-            ReferencedContainer = "container:MncDigitalAnalytics.xcodeproj">
+            ReferencedContainer = "container:PowerAnalytics.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,7 +63,7 @@
             BlueprintIdentifier = "9CEB6D841ABB348900F38A9E"
             BuildableName = "LibAll"
             BlueprintName = "LibAll"
-            ReferencedContainer = "container:MncDigitalAnalytics.xcodeproj">
+            ReferencedContainer = "container:PowerAnalytics.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

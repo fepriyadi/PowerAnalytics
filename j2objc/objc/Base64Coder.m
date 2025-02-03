@@ -15,40 +15,40 @@
 #error "Base64Coder must be compiled with ARC (-fobjc-arc)"
 #endif
 
-@interface ComPowerAnalyticsBase64Coder ()
+@interface Base64Coder ()
 
 - (instancetype)init;
 
 @end
 
-inline NSString *ComPowerAnalyticsBase64Coder_get_systemLineSeparator(void);
-static NSString *ComPowerAnalyticsBase64Coder_systemLineSeparator;
-J2OBJC_STATIC_FIELD_OBJ_FINAL(ComPowerAnalyticsBase64Coder, systemLineSeparator, NSString *)
+inline NSString *Base64Coder_get_systemLineSeparator(void);
+static NSString *Base64Coder_systemLineSeparator;
+J2OBJC_STATIC_FIELD_OBJ_FINAL(Base64Coder, systemLineSeparator, NSString *)
 
-inline IOSCharArray *ComPowerAnalyticsBase64Coder_get_map1(void);
-static IOSCharArray *ComPowerAnalyticsBase64Coder_map1;
-J2OBJC_STATIC_FIELD_OBJ_FINAL(ComPowerAnalyticsBase64Coder, map1, IOSCharArray *)
+inline IOSCharArray *Base64Coder_get_map1(void);
+static IOSCharArray *Base64Coder_map1;
+J2OBJC_STATIC_FIELD_OBJ_FINAL(Base64Coder, map1, IOSCharArray *)
 
-inline IOSByteArray *ComPowerAnalyticsBase64Coder_get_map2(void);
-static IOSByteArray *ComPowerAnalyticsBase64Coder_map2;
-J2OBJC_STATIC_FIELD_OBJ_FINAL(ComPowerAnalyticsBase64Coder, map2, IOSByteArray *)
+inline IOSByteArray *Base64Coder_get_map2(void);
+static IOSByteArray *Base64Coder_map2;
+J2OBJC_STATIC_FIELD_OBJ_FINAL(Base64Coder, map2, IOSByteArray *)
 
-__attribute__((unused)) static void ComPowerAnalyticsBase64Coder_init(ComPowerAnalyticsBase64Coder *self);
+__attribute__((unused)) static void Base64Coder_init(Base64Coder *self);
 
-__attribute__((unused)) static ComPowerAnalyticsBase64Coder *new_ComPowerAnalyticsBase64Coder_init(void) NS_RETURNS_RETAINED;
+__attribute__((unused)) static Base64Coder *new_Base64Coder_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComPowerAnalyticsBase64Coder *create_ComPowerAnalyticsBase64Coder_init(void);
+__attribute__((unused)) static Base64Coder *create_Base64Coder_init(void);
 
-J2OBJC_INITIALIZED_DEFN(ComPowerAnalyticsBase64Coder)
+J2OBJC_INITIALIZED_DEFN(Base64Coder)
 
-@implementation ComPowerAnalyticsBase64Coder
+@implementation Base64Coder
 
 + (NSString *)encodeStringWithNSString:(NSString *)s {
-  return ComPowerAnalyticsBase64Coder_encodeStringWithNSString_(s);
+  return Base64Coder_encodeStringWithNSString_(s);
 }
 
 + (NSString *)encodeLinesWithByteArray:(IOSByteArray *)inArg {
-  return ComPowerAnalyticsBase64Coder_encodeLinesWithByteArray_(inArg);
+  return Base64Coder_encodeLinesWithByteArray_(inArg);
 }
 
 + (NSString *)encodeLinesWithByteArray:(IOSByteArray *)inArg
@@ -56,49 +56,49 @@ J2OBJC_INITIALIZED_DEFN(ComPowerAnalyticsBase64Coder)
                                withInt:(jint)iLen
                                withInt:(jint)lineLen
                           withNSString:(NSString *)lineSeparator {
-  return ComPowerAnalyticsBase64Coder_encodeLinesWithByteArray_withInt_withInt_withInt_withNSString_(inArg, iOff, iLen, lineLen, lineSeparator);
+  return Base64Coder_encodeLinesWithByteArray_withInt_withInt_withInt_withNSString_(inArg, iOff, iLen, lineLen, lineSeparator);
 }
 
 + (IOSCharArray *)encodeWithByteArray:(IOSByteArray *)inArg {
-  return ComPowerAnalyticsBase64Coder_encodeWithByteArray_(inArg);
+  return Base64Coder_encodeWithByteArray_(inArg);
 }
 
 + (IOSCharArray *)encodeWithByteArray:(IOSByteArray *)inArg
                               withInt:(jint)iLen {
-  return ComPowerAnalyticsBase64Coder_encodeWithByteArray_withInt_(inArg, iLen);
+  return Base64Coder_encodeWithByteArray_withInt_(inArg, iLen);
 }
 
 + (IOSCharArray *)encodeWithByteArray:(IOSByteArray *)inArg
                               withInt:(jint)iOff
                               withInt:(jint)iLen {
-  return ComPowerAnalyticsBase64Coder_encodeWithByteArray_withInt_withInt_(inArg, iOff, iLen);
+  return Base64Coder_encodeWithByteArray_withInt_withInt_(inArg, iOff, iLen);
 }
 
 + (NSString *)decodeStringWithNSString:(NSString *)s {
-  return ComPowerAnalyticsBase64Coder_decodeStringWithNSString_(s);
+  return Base64Coder_decodeStringWithNSString_(s);
 }
 
 + (IOSByteArray *)decodeLinesWithNSString:(NSString *)s {
-  return ComPowerAnalyticsBase64Coder_decodeLinesWithNSString_(s);
+  return Base64Coder_decodeLinesWithNSString_(s);
 }
 
 + (IOSByteArray *)decodeWithNSString:(NSString *)s {
-  return ComPowerAnalyticsBase64Coder_decodeWithNSString_(s);
+  return Base64Coder_decodeWithNSString_(s);
 }
 
 + (IOSByteArray *)decodeWithCharArray:(IOSCharArray *)inArg {
-  return ComPowerAnalyticsBase64Coder_decodeWithCharArray_(inArg);
+  return Base64Coder_decodeWithCharArray_(inArg);
 }
 
 + (IOSByteArray *)decodeWithCharArray:(IOSCharArray *)inArg
                               withInt:(jint)iOff
                               withInt:(jint)iLen {
-  return ComPowerAnalyticsBase64Coder_decodeWithCharArray_withInt_withInt_(inArg, iOff, iLen);
+  return Base64Coder_decodeWithCharArray_withInt_withInt_(inArg, iOff, iLen);
 }
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
 - (instancetype)init {
-  ComPowerAnalyticsBase64Coder_init(self);
+  Base64Coder_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
@@ -139,46 +139,46 @@ J2OBJC_IGNORE_DESIGNATED_END
     { "map1", "[C", .constantValue.asLong = 0, 0x1a, -1, 14, -1, -1 },
     { "map2", "[B", .constantValue.asLong = 0, 0x1a, -1, 15, -1, -1 },
   };
-  static const void *ptrTable[] = { "encodeString", "LNSString;", "encodeLines", "[B", "[BIIILNSString;", "encode", "[BI", "[BII", "decodeString", "decodeLines", "decode", "[C", "[CII", &ComPowerAnalyticsBase64Coder_systemLineSeparator, &ComPowerAnalyticsBase64Coder_map1, &ComPowerAnalyticsBase64Coder_map2 };
-  static const J2ObjcClassInfo _ComPowerAnalyticsBase64Coder = { "Base64Coder", "com.power.analytics", ptrTable, methods, fields, 7, 0x1, 12, 3, -1, -1, -1, -1, -1 };
-  return &_ComPowerAnalyticsBase64Coder;
+  static const void *ptrTable[] = { "encodeString", "LNSString;", "encodeLines", "[B", "[BIIILNSString;", "encode", "[BI", "[BII", "decodeString", "decodeLines", "decode", "[C", "[CII", &Base64Coder_systemLineSeparator, &Base64Coder_map1, &Base64Coder_map2 };
+  static const J2ObjcClassInfo _Base64Coder = { "Base64Coder", "com.power.analytics", ptrTable, methods, fields, 7, 0x1, 12, 3, -1, -1, -1, -1, -1 };
+  return &_Base64Coder;
 }
 
 + (void)initialize {
-  if (self == [ComPowerAnalyticsBase64Coder class]) {
-    ComPowerAnalyticsBase64Coder_systemLineSeparator = JavaLangSystem_getPropertyWithNSString_(@"line.separator");
-    ComPowerAnalyticsBase64Coder_map1 = [IOSCharArray newArrayWithLength:64];
+  if (self == [Base64Coder class]) {
+    Base64Coder_systemLineSeparator = JavaLangSystem_getPropertyWithNSString_(@"line.separator");
+    Base64Coder_map1 = [IOSCharArray newArrayWithLength:64];
     {
       jint i = 0;
-      for (jchar c = 'A'; c <= 'Z'; c++) *IOSCharArray_GetRef(ComPowerAnalyticsBase64Coder_map1, i++) = c;
-      for (jchar c = 'a'; c <= 'z'; c++) *IOSCharArray_GetRef(ComPowerAnalyticsBase64Coder_map1, i++) = c;
-      for (jchar c = '0'; c <= '9'; c++) *IOSCharArray_GetRef(ComPowerAnalyticsBase64Coder_map1, i++) = c;
-      *IOSCharArray_GetRef(ComPowerAnalyticsBase64Coder_map1, i++) = '+';
-      *IOSCharArray_GetRef(ComPowerAnalyticsBase64Coder_map1, i++) = '/';
+      for (jchar c = 'A'; c <= 'Z'; c++) *IOSCharArray_GetRef(Base64Coder_map1, i++) = c;
+      for (jchar c = 'a'; c <= 'z'; c++) *IOSCharArray_GetRef(Base64Coder_map1, i++) = c;
+      for (jchar c = '0'; c <= '9'; c++) *IOSCharArray_GetRef(Base64Coder_map1, i++) = c;
+      *IOSCharArray_GetRef(Base64Coder_map1, i++) = '+';
+      *IOSCharArray_GetRef(Base64Coder_map1, i++) = '/';
     }
-    ComPowerAnalyticsBase64Coder_map2 = [IOSByteArray newArrayWithLength:128];
+    Base64Coder_map2 = [IOSByteArray newArrayWithLength:128];
     {
-      for (jint i = 0; i < ComPowerAnalyticsBase64Coder_map2->size_; i++) *IOSByteArray_GetRef(ComPowerAnalyticsBase64Coder_map2, i) = -1;
-      for (jint i = 0; i < 64; i++) *IOSByteArray_GetRef(ComPowerAnalyticsBase64Coder_map2, IOSCharArray_Get(ComPowerAnalyticsBase64Coder_map1, i)) = (jbyte) i;
+      for (jint i = 0; i < Base64Coder_map2->size_; i++) *IOSByteArray_GetRef(Base64Coder_map2, i) = -1;
+      for (jint i = 0; i < 64; i++) *IOSByteArray_GetRef(Base64Coder_map2, IOSCharArray_Get(Base64Coder_map1, i)) = (jbyte) i;
     }
-    J2OBJC_SET_INITIALIZED(ComPowerAnalyticsBase64Coder)
+    J2OBJC_SET_INITIALIZED(Base64Coder)
   }
 }
 
 @end
 
-NSString *ComPowerAnalyticsBase64Coder_encodeStringWithNSString_(NSString *s) {
-  ComPowerAnalyticsBase64Coder_initialize();
-  return [NSString java_stringWithCharacters:ComPowerAnalyticsBase64Coder_encodeWithByteArray_([((NSString *) nil_chk(s)) java_getBytes])];
+NSString *Base64Coder_encodeStringWithNSString_(NSString *s) {
+  Base64Coder_initialize();
+  return [NSString java_stringWithCharacters:Base64Coder_encodeWithByteArray_([((NSString *) nil_chk(s)) java_getBytes])];
 }
 
-NSString *ComPowerAnalyticsBase64Coder_encodeLinesWithByteArray_(IOSByteArray *inArg) {
-  ComPowerAnalyticsBase64Coder_initialize();
-  return ComPowerAnalyticsBase64Coder_encodeLinesWithByteArray_withInt_withInt_withInt_withNSString_(inArg, 0, ((IOSByteArray *) nil_chk(inArg))->size_, 76, ComPowerAnalyticsBase64Coder_systemLineSeparator);
+NSString *Base64Coder_encodeLinesWithByteArray_(IOSByteArray *inArg) {
+  Base64Coder_initialize();
+  return Base64Coder_encodeLinesWithByteArray_withInt_withInt_withInt_withNSString_(inArg, 0, ((IOSByteArray *) nil_chk(inArg))->size_, 76, Base64Coder_systemLineSeparator);
 }
 
-NSString *ComPowerAnalyticsBase64Coder_encodeLinesWithByteArray_withInt_withInt_withInt_withNSString_(IOSByteArray *inArg, jint iOff, jint iLen, jint lineLen, NSString *lineSeparator) {
-  ComPowerAnalyticsBase64Coder_initialize();
+NSString *Base64Coder_encodeLinesWithByteArray_withInt_withInt_withInt_withNSString_(IOSByteArray *inArg, jint iOff, jint iLen, jint lineLen, NSString *lineSeparator) {
+  Base64Coder_initialize();
   jint blockLen = JreIntDiv((lineLen * 3), 4);
   if (blockLen <= 0) @throw new_JavaLangIllegalArgumentException_init();
   jint lines = JreIntDiv((iLen + blockLen - 1), blockLen);
@@ -187,25 +187,25 @@ NSString *ComPowerAnalyticsBase64Coder_encodeLinesWithByteArray_withInt_withInt_
   jint ip = 0;
   while (ip < iLen) {
     jint l = JavaLangMath_minWithInt_withInt_(iLen - ip, blockLen);
-    (void) [buf appendWithCharArray:ComPowerAnalyticsBase64Coder_encodeWithByteArray_withInt_withInt_(inArg, iOff + ip, l)];
+    (void) [buf appendWithCharArray:Base64Coder_encodeWithByteArray_withInt_withInt_(inArg, iOff + ip, l)];
     (void) [buf appendWithNSString:lineSeparator];
     ip += l;
   }
   return [buf description];
 }
 
-IOSCharArray *ComPowerAnalyticsBase64Coder_encodeWithByteArray_(IOSByteArray *inArg) {
-  ComPowerAnalyticsBase64Coder_initialize();
-  return ComPowerAnalyticsBase64Coder_encodeWithByteArray_withInt_withInt_(inArg, 0, ((IOSByteArray *) nil_chk(inArg))->size_);
+IOSCharArray *Base64Coder_encodeWithByteArray_(IOSByteArray *inArg) {
+  Base64Coder_initialize();
+  return Base64Coder_encodeWithByteArray_withInt_withInt_(inArg, 0, ((IOSByteArray *) nil_chk(inArg))->size_);
 }
 
-IOSCharArray *ComPowerAnalyticsBase64Coder_encodeWithByteArray_withInt_(IOSByteArray *inArg, jint iLen) {
-  ComPowerAnalyticsBase64Coder_initialize();
-  return ComPowerAnalyticsBase64Coder_encodeWithByteArray_withInt_withInt_(inArg, 0, iLen);
+IOSCharArray *Base64Coder_encodeWithByteArray_withInt_(IOSByteArray *inArg, jint iLen) {
+  Base64Coder_initialize();
+  return Base64Coder_encodeWithByteArray_withInt_withInt_(inArg, 0, iLen);
 }
 
-IOSCharArray *ComPowerAnalyticsBase64Coder_encodeWithByteArray_withInt_withInt_(IOSByteArray *inArg, jint iOff, jint iLen) {
-  ComPowerAnalyticsBase64Coder_initialize();
+IOSCharArray *Base64Coder_encodeWithByteArray_withInt_withInt_(IOSByteArray *inArg, jint iOff, jint iLen) {
+  Base64Coder_initialize();
   jint oDataLen = JreIntDiv((iLen * 4 + 2), 3);
   jint oLen = (JreIntDiv((iLen + 2), 3)) * 4;
   IOSCharArray *out = [IOSCharArray newArrayWithLength:oLen];
@@ -220,44 +220,44 @@ IOSCharArray *ComPowerAnalyticsBase64Coder_encodeWithByteArray_withInt_withInt_(
     jint o1 = (JreLShift32((i0 & 3), 4)) | (JreURShift32(i1, 4));
     jint o2 = (JreLShift32((i1 & (jint) 0xf), 2)) | (JreURShift32(i2, 6));
     jint o3 = i2 & (jint) 0x3F;
-    *IOSCharArray_GetRef(out, op++) = IOSCharArray_Get(nil_chk(ComPowerAnalyticsBase64Coder_map1), o0);
-    *IOSCharArray_GetRef(out, op++) = IOSCharArray_Get(ComPowerAnalyticsBase64Coder_map1, o1);
-    *IOSCharArray_GetRef(out, op) = op < oDataLen ? IOSCharArray_Get(ComPowerAnalyticsBase64Coder_map1, o2) : '=';
+    *IOSCharArray_GetRef(out, op++) = IOSCharArray_Get(nil_chk(Base64Coder_map1), o0);
+    *IOSCharArray_GetRef(out, op++) = IOSCharArray_Get(Base64Coder_map1, o1);
+    *IOSCharArray_GetRef(out, op) = op < oDataLen ? IOSCharArray_Get(Base64Coder_map1, o2) : '=';
     op++;
-    *IOSCharArray_GetRef(out, op) = op < oDataLen ? IOSCharArray_Get(ComPowerAnalyticsBase64Coder_map1, o3) : '=';
+    *IOSCharArray_GetRef(out, op) = op < oDataLen ? IOSCharArray_Get(Base64Coder_map1, o3) : '=';
     op++;
   }
   return out;
 }
 
-NSString *ComPowerAnalyticsBase64Coder_decodeStringWithNSString_(NSString *s) {
-  ComPowerAnalyticsBase64Coder_initialize();
-  return [NSString java_stringWithBytes:ComPowerAnalyticsBase64Coder_decodeWithNSString_(s)];
+NSString *Base64Coder_decodeStringWithNSString_(NSString *s) {
+  Base64Coder_initialize();
+  return [NSString java_stringWithBytes:Base64Coder_decodeWithNSString_(s)];
 }
 
-IOSByteArray *ComPowerAnalyticsBase64Coder_decodeLinesWithNSString_(NSString *s) {
-  ComPowerAnalyticsBase64Coder_initialize();
+IOSByteArray *Base64Coder_decodeLinesWithNSString_(NSString *s) {
+  Base64Coder_initialize();
   IOSCharArray *buf = [IOSCharArray newArrayWithLength:[((NSString *) nil_chk(s)) java_length]];
   jint p = 0;
   for (jint ip = 0; ip < [s java_length]; ip++) {
     jchar c = [s charAtWithInt:ip];
     if (c != ' ' && c != 0x000d && c != 0x000a && c != 0x0009) *IOSCharArray_GetRef(buf, p++) = c;
   }
-  return ComPowerAnalyticsBase64Coder_decodeWithCharArray_withInt_withInt_(buf, 0, p);
+  return Base64Coder_decodeWithCharArray_withInt_withInt_(buf, 0, p);
 }
 
-IOSByteArray *ComPowerAnalyticsBase64Coder_decodeWithNSString_(NSString *s) {
-  ComPowerAnalyticsBase64Coder_initialize();
-  return ComPowerAnalyticsBase64Coder_decodeWithCharArray_([((NSString *) nil_chk(s)) java_toCharArray]);
+IOSByteArray *Base64Coder_decodeWithNSString_(NSString *s) {
+  Base64Coder_initialize();
+  return Base64Coder_decodeWithCharArray_([((NSString *) nil_chk(s)) java_toCharArray]);
 }
 
-IOSByteArray *ComPowerAnalyticsBase64Coder_decodeWithCharArray_(IOSCharArray *inArg) {
-  ComPowerAnalyticsBase64Coder_initialize();
-  return ComPowerAnalyticsBase64Coder_decodeWithCharArray_withInt_withInt_(inArg, 0, ((IOSCharArray *) nil_chk(inArg))->size_);
+IOSByteArray *Base64Coder_decodeWithCharArray_(IOSCharArray *inArg) {
+  Base64Coder_initialize();
+  return Base64Coder_decodeWithCharArray_withInt_withInt_(inArg, 0, ((IOSCharArray *) nil_chk(inArg))->size_);
 }
 
-IOSByteArray *ComPowerAnalyticsBase64Coder_decodeWithCharArray_withInt_withInt_(IOSCharArray *inArg, jint iOff, jint iLen) {
-  ComPowerAnalyticsBase64Coder_initialize();
+IOSByteArray *Base64Coder_decodeWithCharArray_withInt_withInt_(IOSCharArray *inArg, jint iOff, jint iLen) {
+  Base64Coder_initialize();
   while (iLen > 0 && IOSCharArray_Get(nil_chk(inArg), iOff + iLen - 1) == '=') iLen--;
   jint oLen = JreIntDiv((iLen * 3), 4);
   IOSByteArray *out = [IOSByteArray newArrayWithLength:oLen];
@@ -270,10 +270,10 @@ IOSByteArray *ComPowerAnalyticsBase64Coder_decodeWithCharArray_withInt_withInt_(
     jint i2 = ip < iEnd ? IOSCharArray_Get(inArg, ip++) : 'A';
     jint i3 = ip < iEnd ? IOSCharArray_Get(inArg, ip++) : 'A';
     if (i0 > 127 || i1 > 127 || i2 > 127 || i3 > 127) @throw new_JavaLangIllegalArgumentException_initWithNSString_(@"Illegal character in Base64 encoded data.");
-    jint b0 = IOSByteArray_Get(nil_chk(ComPowerAnalyticsBase64Coder_map2), i0);
-    jint b1 = IOSByteArray_Get(ComPowerAnalyticsBase64Coder_map2, i1);
-    jint b2 = IOSByteArray_Get(ComPowerAnalyticsBase64Coder_map2, i2);
-    jint b3 = IOSByteArray_Get(ComPowerAnalyticsBase64Coder_map2, i3);
+    jint b0 = IOSByteArray_Get(nil_chk(Base64Coder_map2), i0);
+    jint b1 = IOSByteArray_Get(Base64Coder_map2, i1);
+    jint b2 = IOSByteArray_Get(Base64Coder_map2, i2);
+    jint b3 = IOSByteArray_Get(Base64Coder_map2, i3);
     if (b0 < 0 || b1 < 0 || b2 < 0 || b3 < 0) @throw new_JavaLangIllegalArgumentException_initWithNSString_(@"Illegal character in Base64 encoded data.");
     jint o0 = (JreLShift32(b0, 2)) | (JreURShift32(b1, 4));
     jint o1 = (JreLShift32((b1 & (jint) 0xf), 4)) | (JreURShift32(b2, 2));
@@ -285,16 +285,18 @@ IOSByteArray *ComPowerAnalyticsBase64Coder_decodeWithCharArray_withInt_withInt_(
   return out;
 }
 
-void ComPowerAnalyticsBase64Coder_init(ComPowerAnalyticsBase64Coder *self) {
+void Base64Coder_init(Base64Coder *self) {
   NSObject_init(self);
 }
 
-ComPowerAnalyticsBase64Coder *new_ComPowerAnalyticsBase64Coder_init() {
-  J2OBJC_NEW_IMPL(ComPowerAnalyticsBase64Coder, init)
+Base64Coder *new_Base64Coder_init() {
+  J2OBJC_NEW_IMPL(Base64Coder, init)
 }
 
-ComPowerAnalyticsBase64Coder *create_ComPowerAnalyticsBase64Coder_init() {
-  J2OBJC_CREATE_IMPL(ComPowerAnalyticsBase64Coder, init)
+Base64Coder *create_Base64Coder_init() {
+  J2OBJC_CREATE_IMPL(Base64Coder, init)
 }
 
-J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComPowerAnalyticsBase64Coder)
+J2OBJC_CLASS_TYPE_LITERAL_SOURCE(Base64Coder)
+
+J2OBJC_NAME_MAPPING(Base64Coder, "com.power.analytics", "")

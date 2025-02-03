@@ -13,14 +13,14 @@
 #endif
 #undef RESTRICT_Core
 
-#if !defined (ComPowerAnalyticsCore_) && (INCLUDE_ALL_Core || defined(INCLUDE_ComPowerAnalyticsCore))
-#define ComPowerAnalyticsCore_
+#if !defined (Core_) && (INCLUDE_ALL_Core || defined(INCLUDE_Core))
+#define Core_
 
 @class JavaLangBoolean;
 @class JavaLangException;
 @class OrgJsonJSONArray;
 
-@interface ComPowerAnalyticsCore : NSObject
+@interface Core : NSObject
 
 #pragma mark Public
 
@@ -120,78 +120,80 @@
 
 @end
 
-J2OBJC_EMPTY_STATIC_INIT(ComPowerAnalyticsCore)
+J2OBJC_EMPTY_STATIC_INIT(Core)
 
-inline NSString *ComPowerAnalyticsCore_get_sDUuid(void);
-inline NSString *ComPowerAnalyticsCore_set_sDUuid(NSString *value);
+inline NSString *Core_get_sDUuid(void);
+inline NSString *Core_set_sDUuid(NSString *value);
 /*! INTERNAL ONLY - Use accessor function from above. */
-FOUNDATION_EXPORT NSString *ComPowerAnalyticsCore_sDUuid;
-J2OBJC_STATIC_FIELD_OBJ(ComPowerAnalyticsCore, sDUuid, NSString *)
+FOUNDATION_EXPORT NSString *Core_sDUuid;
+J2OBJC_STATIC_FIELD_OBJ(Core, sDUuid, NSString *)
 
-inline NSString *ComPowerAnalyticsCore_get_sClientKey(void);
-inline NSString *ComPowerAnalyticsCore_set_sClientKey(NSString *value);
+inline NSString *Core_get_sClientKey(void);
+inline NSString *Core_set_sClientKey(NSString *value);
 /*! INTERNAL ONLY - Use accessor function from above. */
-FOUNDATION_EXPORT NSString *ComPowerAnalyticsCore_sClientKey;
-J2OBJC_STATIC_FIELD_OBJ(ComPowerAnalyticsCore, sClientKey, NSString *)
+FOUNDATION_EXPORT NSString *Core_sClientKey;
+J2OBJC_STATIC_FIELD_OBJ(Core, sClientKey, NSString *)
 
-inline NSString *ComPowerAnalyticsCore_get_sBundleId(void);
-inline NSString *ComPowerAnalyticsCore_set_sBundleId(NSString *value);
+inline NSString *Core_get_sBundleId(void);
+inline NSString *Core_set_sBundleId(NSString *value);
 /*! INTERNAL ONLY - Use accessor function from above. */
-FOUNDATION_EXPORT NSString *ComPowerAnalyticsCore_sBundleId;
-J2OBJC_STATIC_FIELD_OBJ(ComPowerAnalyticsCore, sBundleId, NSString *)
+FOUNDATION_EXPORT NSString *Core_sBundleId;
+J2OBJC_STATIC_FIELD_OBJ(Core, sBundleId, NSString *)
 
-inline NSString *ComPowerAnalyticsCore_get_sPlatform(void);
-inline NSString *ComPowerAnalyticsCore_set_sPlatform(NSString *value);
+inline NSString *Core_get_sPlatform(void);
+inline NSString *Core_set_sPlatform(NSString *value);
 /*! INTERNAL ONLY - Use accessor function from above. */
-FOUNDATION_EXPORT NSString *ComPowerAnalyticsCore_sPlatform;
-J2OBJC_STATIC_FIELD_OBJ(ComPowerAnalyticsCore, sPlatform, NSString *)
+FOUNDATION_EXPORT NSString *Core_sPlatform;
+J2OBJC_STATIC_FIELD_OBJ(Core, sPlatform, NSString *)
 
-inline jboolean ComPowerAnalyticsCore_get_bProduction(void);
-inline jboolean ComPowerAnalyticsCore_set_bProduction(jboolean value);
-inline jboolean *ComPowerAnalyticsCore_getRef_bProduction(void);
+inline jboolean Core_get_bProduction(void);
+inline jboolean Core_set_bProduction(jboolean value);
+inline jboolean *Core_getRef_bProduction(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
-FOUNDATION_EXPORT jboolean ComPowerAnalyticsCore_bProduction;
-J2OBJC_STATIC_FIELD_PRIMITIVE(ComPowerAnalyticsCore, bProduction, jboolean)
+FOUNDATION_EXPORT jboolean Core_bProduction;
+J2OBJC_STATIC_FIELD_PRIMITIVE(Core, bProduction, jboolean)
 
-inline jboolean ComPowerAnalyticsCore_get_bDryRun(void);
-inline jboolean ComPowerAnalyticsCore_set_bDryRun(jboolean value);
-inline jboolean *ComPowerAnalyticsCore_getRef_bDryRun(void);
+inline jboolean Core_get_bDryRun(void);
+inline jboolean Core_set_bDryRun(jboolean value);
+inline jboolean *Core_getRef_bDryRun(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
-FOUNDATION_EXPORT jboolean ComPowerAnalyticsCore_bDryRun;
-J2OBJC_STATIC_FIELD_PRIMITIVE(ComPowerAnalyticsCore, bDryRun, jboolean)
+FOUNDATION_EXPORT jboolean Core_bDryRun;
+J2OBJC_STATIC_FIELD_PRIMITIVE(Core, bDryRun, jboolean)
 
-inline jboolean ComPowerAnalyticsCore_get_bUsingLastSessId(void);
-inline jboolean ComPowerAnalyticsCore_set_bUsingLastSessId(jboolean value);
-inline jboolean *ComPowerAnalyticsCore_getRef_bUsingLastSessId(void);
+inline jboolean Core_get_bUsingLastSessId(void);
+inline jboolean Core_set_bUsingLastSessId(jboolean value);
+inline jboolean *Core_getRef_bUsingLastSessId(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
-FOUNDATION_EXPORT jboolean ComPowerAnalyticsCore_bUsingLastSessId;
-J2OBJC_STATIC_FIELD_PRIMITIVE(ComPowerAnalyticsCore, bUsingLastSessId, jboolean)
+FOUNDATION_EXPORT jboolean Core_bUsingLastSessId;
+J2OBJC_STATIC_FIELD_PRIMITIVE(Core, bUsingLastSessId, jboolean)
 
-inline NSString *ComPowerAnalyticsCore_get_sProductDomain(void);
-inline NSString *ComPowerAnalyticsCore_set_sProductDomain(NSString *value);
+inline NSString *Core_get_sProductDomain(void);
+inline NSString *Core_set_sProductDomain(NSString *value);
 /*! INTERNAL ONLY - Use accessor function from above. */
-FOUNDATION_EXPORT NSString *ComPowerAnalyticsCore_sProductDomain;
-J2OBJC_STATIC_FIELD_OBJ(ComPowerAnalyticsCore, sProductDomain, NSString *)
+FOUNDATION_EXPORT NSString *Core_sProductDomain;
+J2OBJC_STATIC_FIELD_OBJ(Core, sProductDomain, NSString *)
 
-inline NSString *ComPowerAnalyticsCore_get_sUserID(void);
-inline NSString *ComPowerAnalyticsCore_set_sUserID(NSString *value);
+inline NSString *Core_get_sUserID(void);
+inline NSString *Core_set_sUserID(NSString *value);
 /*! INTERNAL ONLY - Use accessor function from above. */
-FOUNDATION_EXPORT NSString *ComPowerAnalyticsCore_sUserID;
-J2OBJC_STATIC_FIELD_OBJ(ComPowerAnalyticsCore, sUserID, NSString *)
+FOUNDATION_EXPORT NSString *Core_sUserID;
+J2OBJC_STATIC_FIELD_OBJ(Core, sUserID, NSString *)
 
-FOUNDATION_EXPORT void ComPowerAnalyticsCore_init(ComPowerAnalyticsCore *self);
+FOUNDATION_EXPORT void Core_init(Core *self);
 
-FOUNDATION_EXPORT ComPowerAnalyticsCore *new_ComPowerAnalyticsCore_init(void) NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT Core *new_Core_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComPowerAnalyticsCore *create_ComPowerAnalyticsCore_init(void);
+FOUNDATION_EXPORT Core *create_Core_init(void);
 
-FOUNDATION_EXPORT void ComPowerAnalyticsCore_dpWithNSString_(NSString *s);
+FOUNDATION_EXPORT void Core_dpWithNSString_(NSString *s);
 
-FOUNDATION_EXPORT OrgJsonJSONArray *ComPowerAnalyticsCore_removeFromJsonArrayWithOrgJsonJSONArray_withInt_(OrgJsonJSONArray *jsrc, jint index);
+FOUNDATION_EXPORT OrgJsonJSONArray *Core_removeFromJsonArrayWithOrgJsonJSONArray_withInt_(OrgJsonJSONArray *jsrc, jint index);
 
-FOUNDATION_EXPORT void ComPowerAnalyticsCore_peWithNSString_withJavaLangException_(NSString *s, JavaLangException *e);
+FOUNDATION_EXPORT void Core_peWithNSString_withJavaLangException_(NSString *s, JavaLangException *e);
 
-J2OBJC_TYPE_LITERAL_HEADER(ComPowerAnalyticsCore)
+J2OBJC_TYPE_LITERAL_HEADER(Core)
+
+@compatibility_alias ComPowerAnalyticsCore Core;
 
 #endif
 
