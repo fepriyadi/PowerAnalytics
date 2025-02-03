@@ -1,5 +1,5 @@
 #
-# Be sure to run `pod lib lint MNCAnalytics.podspec' to ensure this is a
+# Be sure to run `pod lib lint PowerAnalytics.podspec' to ensure this is a
 # valid spec before submitting.
 #
 # Any lines starting with a # are optional, but their use is encouraged
@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'MNCAnalytics'
-  s.version          = '1.2.8'
+  s.name             = 'PowerAnalytics'
+  s.version          = '1.0.0'
   s.summary          = 'This is POD version of MNC Analytics'
 
 # This description is used to generate tags and improve search results.
@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
   TODO: Add long description of the pod here
                        DESC
 
-  s.homepage         = 'https://repo.mncinnovation.id/dac/video-analytics/sdk/mobile-sdk/source/ios/pod/MNCAnalytics'
+  s.homepage         = 'https://github.com/fepriyadi/PowerAnalytics'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'fepriyadihrp' => 'fepriyadi.harahap@mncgroup.com' }
-  s.source           = { :git => 'https://repo.mncinnovation.id/dac/video-analytics/sdk/mobile-sdk/source/ios/pod/MNCAnalytics.git', :tag => s.version.to_s }
+  s.author           = { 'fepriyadihrp' => 'fepriyadihrp@gmail.com' }
+  s.source           = { :git => 'https://github.com/fepriyadi/PowerAnalytics.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '11.0'
@@ -33,34 +33,34 @@ Pod::Spec.new do |s|
   s.static_framework = true
   s.libraries = 'icucore','z', 'iconv','jre_emul','json'
 
-  s.source_files = 'MNCAnalytics/include/**/*.h', 'MNCAnalytics/public/*.h'
-  s.public_header_files = 'MNCAnalytics/public/*.h'
-  s.private_header_files = 'MNCAnalytics/include/*.h'
+  s.source_files = 'PowerAnalytics/include/**/*.h', 'PowerAnalytics/public/*.h'
+  s.public_header_files = 'PowerAnalytics/public/*.h'
+  s.private_header_files = 'PowerAnalytics/include/*.h'
   s.frameworks = 'UIKit', 'Foundation','CoreFoundation'
 
   s.prepare_command = <<-CMD
-      XCODEPROJECT=MNCAnalytics
-      XCODETARGET=MNCAnalytics
+      XCODEPROJECT=PowerAnalytics
+      XCODETARGET=PowerAnalytics
       BUILDDIR=build
       BUILDROOT=${BUILDDIR}
       CONFIG=Release
       OUTDIR=${BUILDDIR}/${CONFIG}
 
-      if [ -d "MNCAnalytics/lib" ]; then
-        rm -rf "MNCAnalytics/lib"
+      if [ -d "PowerAnalytics/lib" ]; then
+        rm -rf "PowerAnalytics/lib"
       fi
 
-      if [ ! -d "MNCAnalytics/lib" ]; then
+      if [ ! -d "PowerAnalytics/lib" ]; then
         echo "fetching j2objc lib"
-        mkdir MNCAnalytics/lib
+        mkdir PowerAnalytics/lib
 
         # use this lib locally to test sdk func. only
-        # cp /Users/fep/Documents/SDK/PODS/j2objc/j2objc_lib/lib/libjre_emul.a MNCAnalytics/lib
-        # cp /Users/fep/Documents/SDK/PODS/j2objc/j2objc_lib/lib/libjson.a MNCAnalytics/lib
+        # cp /Users/fep/Documents/SDK/PODS/j2objc/j2objc_lib/lib/libjre_emul.a PowerAnalytics/lib
+        # cp /Users/fep/Documents/SDK/PODS/j2objc/j2objc_lib/lib/libjson.a PowerAnalytics/lib
 
         # ready to download j2objc lib and publish after test locally successful
         curl -OL https://github.com/fepriyadi/MNCAnalytics/releases/download/1.2.3/lib.zip
-        unzip -d MNCAnalytics/lib lib.zip
+        unzip -d PowerAnalytics/lib lib.zip
         rm lib.zip
       fi
 
@@ -76,8 +76,8 @@ Pod::Spec.new do |s|
           rm "${OUTDIR}/lib${XCODEPROJECT}.a"
       fi
 
-      if [ -f "MNCAnalytics/lib" ]; then
-        rm "MNCAnalytics/lib/*.a"
+      if [ -f "PowerAnalytics/lib" ]; then
+        rm "PowerAnalytics/lib/*.a"
       fi
 
       echo "=======> Building devices..."
@@ -105,16 +105,16 @@ Pod::Spec.new do |s|
 
       echo "=======> Copying headers..."
 
-      cp "j2objc/objc/TTask.h" "MNCAnalytics/public/"
-      cp "j2objc/objc/Core.h" "MNCAnalytics/public/"
-      cp "j2objc/objc/MncDigitalAnalytics.h" "MNCAnalytics/public/"
+      cp "j2objc/objc/TTask.h" "PowerAnalytics/public/"
+      cp "j2objc/objc/Core.h" "PowerAnalytics/public/"
+      cp "j2objc/objc/PowerAnalytics.h" "PowerAnalytics/public/"
 
-      cp "${OUTDIR}/lib${XCODEPROJECT}.a" "MNCAnalytics/lib/"
+      cp "${OUTDIR}/lib${XCODEPROJECT}.a" "PowerAnalytics/lib/"
 
       echo "=======> Done"
   CMD
   
-  s.vendored_libraries = 'MNCAnalytics/lib/*.a'
+  s.vendored_libraries = 'PowerAnalytics/lib/*.a'
   s.xcconfig = {
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
     'ALWAYS_SEARCH_USER_PATHS' => 'NO',
@@ -127,7 +127,7 @@ Pod::Spec.new do |s|
   }
   s.user_target_xcconfig = { 
     'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
-    'USER_HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/Headers/Private/MNCAnalytics"',
-    'SWIFT_OBJC_BRIDGING_HEADER' => '${PODS_ROOT}/Headers/Public/MNCAnalytics/MncDigitalAnalytics.h'
+    'USER_HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/Headers/Private/PowerAnalytics"',
+    'SWIFT_OBJC_BRIDGING_HEADER' => '${PODS_ROOT}/Headers/Public/PowerAnalytics/PowerAnalytics.h'
   }
 end

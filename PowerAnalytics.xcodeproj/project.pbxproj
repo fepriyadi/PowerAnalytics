@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C25AA1E20FE381B00BF7FDC /* Core.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C25AA1D20FE381B00BF7FDC /* Core.m */; };
-		9C57B94A2A8CBC97008AC252 /* MncDigitalAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C57B9492A8CBC97008AC252 /* MncDigitalAnalytics.m */; };
+		9C57B94A2A8CBC97008AC252 /* PowerAnalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C57B9492A8CBC97008AC252 /* PowerAnalytics.m */; };
 		9C626C23213D1E8A005C4262 /* Base64Coder.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C626C21213D1E8A005C4262 /* Base64Coder.m */; };
 		9C9EEE5C2104473E00C9AAFF /* TTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9EEE5A2104473D00C9AAFF /* TTask.m */; };
 /* End PBXBuildFile section */
@@ -28,14 +28,14 @@
 /* Begin PBXFileReference section */
 		9C25AA1C20FE381B00BF7FDC /* Core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Core.h; path = j2objc/objc/Core.h; sourceTree = SOURCE_ROOT; };
 		9C25AA1D20FE381B00BF7FDC /* Core.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Core.m; path = j2objc/objc/Core.m; sourceTree = SOURCE_ROOT; };
-		9C57B9482A8CBC97008AC252 /* MncDigitalAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MncDigitalAnalytics.h; sourceTree = "<group>"; };
-		9C57B9492A8CBC97008AC252 /* MncDigitalAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MncDigitalAnalytics.m; sourceTree = "<group>"; };
+		9C57B9482A8CBC97008AC252 /* PowerAnalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PowerAnalytics.h; sourceTree = "<group>"; };
+		9C57B9492A8CBC97008AC252 /* PowerAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerAnalytics.m; sourceTree = "<group>"; };
 		9C626C21213D1E8A005C4262 /* Base64Coder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Coder.m; sourceTree = "<group>"; };
 		9C626C22213D1E8A005C4262 /* Base64Coder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Coder.h; sourceTree = "<group>"; };
 		9C9EEE592104473D00C9AAFF /* TTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTask.h; sourceTree = "<group>"; };
 		9C9EEE5A2104473D00C9AAFF /* TTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTask.m; sourceTree = "<group>"; };
-		9C9EEE6C2104D01900C9AAFF /* MncDigitalAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MncDigitalAnalytics.m; sourceTree = "<group>"; };
-		9CEB6D6A1ABB347000F38A9E /* libMNCAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMNCAnalytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C9EEE6C2104D01900C9AAFF /* PowerAnalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PowerAnalytics.m; sourceTree = "<group>"; };
+		9CEB6D6A1ABB347000F38A9E /* libPowerAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPowerAnalytics.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CEB6D7B1ABB347100F38A9E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -53,8 +53,8 @@
 		9C25AA1B20FE37EE00BF7FDC /* j2objc */ = {
 			isa = PBXGroup;
 			children = (
-				9C57B9482A8CBC97008AC252 /* MncDigitalAnalytics.h */,
-				9C57B9492A8CBC97008AC252 /* MncDigitalAnalytics.m */,
+				9C57B9482A8CBC97008AC252 /* PowerAnalytics.h */,
+				9C57B9492A8CBC97008AC252 /* PowerAnalytics.m */,
 				9C626C22213D1E8A005C4262 /* Base64Coder.h */,
 				9C626C21213D1E8A005C4262 /* Base64Coder.m */,
 				9C9EEE592104473D00C9AAFF /* TTask.h */,
@@ -69,7 +69,7 @@
 		9C57B9472A8CBC6F008AC252 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				9C9EEE6C2104D01900C9AAFF /* MncDigitalAnalytics.m */,
+				9C9EEE6C2104D01900C9AAFF /* PowerAnalytics.m */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -77,8 +77,8 @@
 		9CEB6D611ABB347000F38A9E = {
 			isa = PBXGroup;
 			children = (
-				9CEB6D6C1ABB347000F38A9E /* MNCAnalytics */,
-				9CEB6D791ABB347100F38A9E /* MNCAnalyticsTests */,
+				9CEB6D6C1ABB347000F38A9E /* PowerAnalytics */,
+				9CEB6D791ABB347100F38A9E /* PowerAnalyticsTests */,
 				9CEB6D6B1ABB347000F38A9E /* Products */,
 				9C57B9472A8CBC6F008AC252 /* Recovered References */,
 			);
@@ -87,25 +87,25 @@
 		9CEB6D6B1ABB347000F38A9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9CEB6D6A1ABB347000F38A9E /* libMNCAnalytics.a */,
+				9CEB6D6A1ABB347000F38A9E /* libPowerAnalytics.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9CEB6D6C1ABB347000F38A9E /* MNCAnalytics */ = {
+		9CEB6D6C1ABB347000F38A9E /* PowerAnalytics */ = {
 			isa = PBXGroup;
 			children = (
 				9C25AA1B20FE37EE00BF7FDC /* j2objc */,
 			);
-			path = MNCAnalytics;
+			path = PowerAnalytics;
 			sourceTree = "<group>";
 		};
-		9CEB6D791ABB347100F38A9E /* MNCAnalyticsTests */ = {
+		9CEB6D791ABB347100F38A9E /* PowerAnalyticsTests */ = {
 			isa = PBXGroup;
 			children = (
 				9CEB6D7A1ABB347100F38A9E /* Supporting Files */,
 			);
-			path = MNCAnalyticsTests;
+			path = PowerAnalyticsTests;
 			sourceTree = "<group>";
 		};
 		9CEB6D7A1ABB347100F38A9E /* Supporting Files */ = {
@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9CEB6D691ABB347000F38A9E /* MNCAnalytics */ = {
+		9CEB6D691ABB347000F38A9E /* PowerAnalytics */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9CEB6D7E1ABB347100F38A9E /* Build configuration list for PBXNativeTarget "MNCAnalytics" */;
+			buildConfigurationList = 9CEB6D7E1ABB347100F38A9E /* Build configuration list for PBXNativeTarget "PowerAnalytics" */;
 			buildPhases = (
 				9CEB6D661ABB347000F38A9E /* Sources */,
 				9CEB6D671ABB347000F38A9E /* Frameworks */,
@@ -131,9 +131,9 @@
 			);
 			dependencies = (
 			);
-			name = MNCAnalytics;
-			productName = MNCAnalytics;
-			productReference = 9CEB6D6A1ABB347000F38A9E /* libMNCAnalytics.a */;
+			name = PowerAnalytics;
+			productName = PowerAnalytics;
+			productReference = 9CEB6D6A1ABB347000F38A9E /* libPowerAnalytics.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -150,7 +150,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9CEB6D651ABB347000F38A9E /* Build configuration list for PBXProject "MNCAnalytics" */;
+			buildConfigurationList = 9CEB6D651ABB347000F38A9E /* Build configuration list for PBXProject "PowerAnalytics" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -163,7 +163,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9CEB6D691ABB347000F38A9E /* MNCAnalytics */,
+				9CEB6D691ABB347000F38A9E /* PowerAnalytics */,
 			);
 		};
 /* End PBXProject section */
@@ -173,7 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C57B94A2A8CBC97008AC252 /* MncDigitalAnalytics.m in Sources */,
+				9C57B94A2A8CBC97008AC252 /* PowerAnalytics.m in Sources */,
 				9C9EEE5C2104473E00C9AAFF /* TTask.m in Sources */,
 				9C626C23213D1E8A005C4262 /* Base64Coder.m in Sources */,
 				9C25AA1E20FE381B00BF7FDC /* Core.m in Sources */,
@@ -217,7 +217,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MNCAnalytics/include";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/PowerAnalytics/include";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = YES;
@@ -257,7 +257,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MNCAnalytics/include";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/PowerAnalytics/include";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "";
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -277,7 +277,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MNCAnalytics/include";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/PowerAnalytics/include";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,7 +294,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/MNCAnalytics/include";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/PowerAnalytics/include";
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,7 +306,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9CEB6D651ABB347000F38A9E /* Build configuration list for PBXProject "MNCAnalytics" */ = {
+		9CEB6D651ABB347000F38A9E /* Build configuration list for PBXProject "PowerAnalytics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CEB6D7C1ABB347100F38A9E /* Debug */,
@@ -315,7 +315,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9CEB6D7E1ABB347100F38A9E /* Build configuration list for PBXNativeTarget "MNCAnalytics" */ = {
+		9CEB6D7E1ABB347100F38A9E /* Build configuration list for PBXNativeTarget "PowerAnalytics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9CEB6D7F1ABB347100F38A9E /* Debug */,

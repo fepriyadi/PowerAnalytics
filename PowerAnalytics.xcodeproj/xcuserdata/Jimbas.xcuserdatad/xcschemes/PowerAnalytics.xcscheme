@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9CEB6D691ABB347000F38A9E"
-               BuildableName = "libMncDigitalAnalytics.a"
-               BlueprintName = "MncDigitalAnalytics"
-               ReferencedContainer = "container:MncDigitalAnalytics.xcodeproj">
+               BuildableName = "libPowerAnalytics.a"
+               BlueprintName = "PowerAnalytics"
+               ReferencedContainer = "container:PowerAnalytics.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9CEB6D741ABB347100F38A9E"
-               BuildableName = "MncDigitalAnalyticsTests.xctest"
-               BlueprintName = "MncDigitalAnalyticsTests"
-               ReferencedContainer = "container:MncDigitalAnalytics.xcodeproj">
+               BuildableName = "PowerAnalyticsTests.xctest"
+               BlueprintName = "PowerAnalyticsTests"
+               ReferencedContainer = "container:PowerAnalytics.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9CEB6D741ABB347100F38A9E"
-               BuildableName = "MncDigitalAnalyticsTests.xctest"
-               BlueprintName = "MncDigitalAnalyticsTests"
-               ReferencedContainer = "container:MncDigitalAnalytics.xcodeproj">
+               BuildableName = "PowerAnalyticsTests.xctest"
+               BlueprintName = "PowerAnalyticsTests"
+               ReferencedContainer = "container:PowerAnalytics.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9CEB6D691ABB347000F38A9E"
-            BuildableName = "libMncDigitalAnalytics.a"
-            BlueprintName = "MncDigitalAnalytics"
-            ReferencedContainer = "container:MncDigitalAnalytics.xcodeproj">
+            BuildableName = "libPowerAnalytics.a"
+            BlueprintName = "PowerAnalytics"
+            ReferencedContainer = "container:PowerAnalytics.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9CEB6D691ABB347000F38A9E"
-            BuildableName = "libMncDigitalAnalytics.a"
-            BlueprintName = "MncDigitalAnalytics"
-            ReferencedContainer = "container:MncDigitalAnalytics.xcodeproj">
+            BuildableName = "libPowerAnalytics.a"
+            BlueprintName = "PowerAnalytics"
+            ReferencedContainer = "container:PowerAnalytics.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -94,9 +94,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9CEB6D691ABB347000F38A9E"
-            BuildableName = "libMncDigitalAnalytics.a"
-            BlueprintName = "MncDigitalAnalytics"
-            ReferencedContainer = "container:MncDigitalAnalytics.xcodeproj">
+            BuildableName = "libPowerAnalytics.a"
+            BlueprintName = "PowerAnalytics"
+            ReferencedContainer = "container:PowerAnalytics.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

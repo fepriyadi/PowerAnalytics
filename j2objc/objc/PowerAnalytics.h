@@ -18,9 +18,9 @@
 //extern NSString* const MNCA_SIGNUP_METHOD;
 //extern NSString* const MNCA_SIGN_METHOD;
 
-@interface MncDigitalAnalytics : Core
+@interface PowerAnalytics : Core
 
-+ (MncDigitalAnalytics*) initSdk_:(NSString*)clientKey withProductDomain:(NSString*)productDomain;
++ (PowerAnalytics*) initSdk_:(NSString*)clientKey withProductDomain:(NSString*)productDomain;
 + (void) setEnvironmentProduction:(BOOL)production;
 + (void) dryRun:(BOOL)dryRun;
 + (void) setUserID:(NSString*)userID;
@@ -35,22 +35,15 @@
 + (void) videoTags:(NSString*)tags;
 + (void) videoPlay;
 + (void) videoPause;
-+ (void) videoPause:(NSString*)videoName;
 + (void) videoComplete;
 + (void) videoBuffer;
 + (void) videoDurationWithValue:(double)duration;
 + (void) videoPlayingWithPosition:(double)position;
 + (void) videoBitrateWithValue:(int)video withAudio:(int)audio;
 + (void) videoSeekWithPosition:(double)position;
-+ (void) videoUnload:(NSString*)videoName;
 + (void) videoUnload;
 + (void) videoErrorWithMessage:(NSString*)message;
 // Ads
-+ (void) videoAdLoad:(NSString*)tag;
-+ (void) videoAdUnload;
-+ (void) videoAdBuffer;
-+ (void) videoAdAbr:(int)bitrate;
-+ (void) videoAdVbr:(int)bitrate;
 + (void) videoAdPlay:(NSString*)tag;
 + (void) videoAdPause:(NSString*)tag;
 + (void) videoAdError:(NSString*)tag withMessage:(NSString*)msg;
