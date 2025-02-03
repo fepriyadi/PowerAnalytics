@@ -1,0 +1,33 @@
+dependencies: \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/j2objc/objc/Base64Coder.m \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/j2objc/objc/Base64Coder.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/J2ObjC_header.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/IOSObjectArray.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/IOSArray.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/J2ObjC_common.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/NSObject+JavaObject.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/JavaObject.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/IOSPrimitiveArray.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/J2ObjC_source.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/IOSClass.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/IOSMetadata.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/J2ObjC_types.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/io/Serializable.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/lang/reflect/AnnotatedElement.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/lang/reflect/GenericDeclaration.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/lang/reflect/Type.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/NSCopying+JavaCloneable.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/NSNumber+JavaNumber.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/NSString+JavaString.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/lang/CharSequence.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/lang/Comparable.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/jni.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/lang/IllegalArgumentException.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/lang/RuntimeException.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/lang/Exception.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/lang/Throwable.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/lang/Math.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/lang/StringBuilder.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/lang/AbstractStringBuilder.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/lang/Appendable.h \
+  /Users/fep/Documents/General/PODS/MNCAnalytics/MNCAnalytics/include/java/lang/System.h

@@ -1,0 +1,7 @@
+j2objc_lib/lib/
+j2objc_lib/lib
+dist/
+dist
+MNCAnalytics/lib/
+MNCAnalytics/lib
+*.DS_Store
