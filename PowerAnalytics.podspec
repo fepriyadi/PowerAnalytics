@@ -45,6 +45,7 @@ Pod::Spec.new do |s|
       BUILDROOT=${BUILDDIR}
       CONFIG=Release
       OUTDIR=${BUILDDIR}/${CONFIG}
+      echo "Current Directory: $(pwd)"
 
       if [ -d "PowerAnalytics/lib" ]; then
         rm -rf "PowerAnalytics/lib"
@@ -55,13 +56,13 @@ Pod::Spec.new do |s|
         mkdir PowerAnalytics/lib
 
         # use this lib locally to test sdk func. only
-        cp /Users/fepriyadi/Documents/SDK/PODS/j2objc/j2objc_lib/lib/libjre_emul.a PowerAnalytics/lib
-        cp /Users/fepriyadi/Documents/SDK/PODS/j2objc/j2objc_lib/lib/libjson.a PowerAnalytics/lib
+        # cp /Users/fepriyadi/Documents/SDK/PODS/j2objc/j2objc_lib/lib/libjre_emul.a PowerAnalytics/lib
+        # cp /Users/fepriyadi/Documents/SDK/PODS/j2objc/j2objc_lib/lib/libjson.a PowerAnalytics/lib
 
         # ready to download j2objc lib and publish after test locally successful
-        # curl -OL https://github.com/fepriyadi/MNCAnalytics/releases/download/1.2.3/lib.zip
-        # unzip -d PowerAnalytics/lib lib.zip
-        # rm lib.zip
+        curl -OL https://github.com/fepriyadi/MNCAnalytics/releases/download/1.2.3/lib.zip
+        unzip -d PowerAnalytics/lib lib.zip
+        rm lib.zip
       fi
 
       echo "Creating framework"
@@ -93,7 +94,7 @@ Pod::Spec.new do |s|
       fi
       
       echo "=======> Building x86_64..."
-      xcodebuild -project ${XCODEPROJECT}.xcodeproj -target ${XCODETARGET} -configuration ${CONFIG} -sdk iphonesimulator -arch arm64 
+      xcodebuild -project ${XCODEPROJECT}.xcodeproj -target ${XCODETARGET} -configuration ${CONFIG} -sdk iphonesimulator -arch x86_64 
       BUILD_DIR="${BUILDDIR}" BUILD_ROOT="${BUILDROOT}" BITCODE_GENERATION_MODE=bitcode
       if [ $? -gt 0 ]; then
         echo "ERROR! when try to build..."
@@ -120,17 +121,17 @@ Pod::Spec.new do |s|
   
   s.vendored_libraries = 'PowerAnalytics/lib/*.a'
   s.xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
     'ALWAYS_SEARCH_USER_PATHS' => 'NO',
     'ONLY_ACTIVE_ARCH' => 'NO',
     'OTHER_LDFLAGS' => '$(inherited) -liconv -ljson'
   }
 
   s.pod_target_xcconfig = { 
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' 
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' 
   }
   s.user_target_xcconfig = { 
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
     'USER_HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/Headers/Private/PowerAnalytics"',
     'SWIFT_OBJC_BRIDGING_HEADER' => '${PODS_ROOT}/Headers/Public/PowerAnalytics/PowerAnalytics.h'
   }

@@ -18,9 +18,9 @@
 //extern NSString* const MNCA_SIGNUP_METHOD;
 //extern NSString* const MNCA_SIGN_METHOD;
 
-@interface MncDigitalAnalytics : Core
+@interface PowerAnalytics : Core
 
-+ (MncDigitalAnalytics*) initSdk_:(NSString*)clientKey withProductDomain:(NSString*)productDomain;
++ (PowerAnalytics*) initSdk_:(NSString*)clientKey withProductDomain:(NSString*)productDomain;
 + (void) setEnvironmentProduction:(BOOL)production;
 + (void) dryRun:(BOOL)dryRun;
 + (void) setUserID:(NSString*)userID;
