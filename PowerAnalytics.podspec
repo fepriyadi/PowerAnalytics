@@ -94,7 +94,7 @@ Pod::Spec.new do |s|
       fi
       
       echo "=======> Building x86_64..."
-      xcodebuild -project ${XCODEPROJECT}.xcodeproj -target ${XCODETARGET} -configuration ${CONFIG} -sdk iphonesimulator -arch arm64 
+      xcodebuild -project ${XCODEPROJECT}.xcodeproj -target ${XCODETARGET} -configuration ${CONFIG} -sdk iphonesimulator -arch x86_64 
       BUILD_DIR="${BUILDDIR}" BUILD_ROOT="${BUILDROOT}" BITCODE_GENERATION_MODE=bitcode
       if [ $? -gt 0 ]; then
         echo "ERROR! when try to build..."
@@ -121,17 +121,17 @@ Pod::Spec.new do |s|
   
   s.vendored_libraries = 'PowerAnalytics/lib/*.a'
   s.xcconfig = {
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
     'ALWAYS_SEARCH_USER_PATHS' => 'NO',
     'ONLY_ACTIVE_ARCH' => 'NO',
     'OTHER_LDFLAGS' => '$(inherited) -liconv -ljson'
   }
 
   s.pod_target_xcconfig = { 
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64' 
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' 
   }
   s.user_target_xcconfig = { 
-    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'x86_64',
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64',
     'USER_HEADER_SEARCH_PATHS' => '$(inherited) "${PODS_ROOT}/Headers/Private/PowerAnalytics"',
     'SWIFT_OBJC_BRIDGING_HEADER' => '${PODS_ROOT}/Headers/Public/PowerAnalytics/PowerAnalytics.h'
   }

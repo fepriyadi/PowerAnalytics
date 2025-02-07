@@ -76,7 +76,7 @@ static PowerAnalytics *mPowerAnalytics;
         return;
     }
     [PowerAnalytics dp_:@"forceFlush"];
-    [mPowerAnalytics flushDataWithBoolean:NO withBoolean:NO];
+    [mPowerAnalytics flushDataWithBoolean:NO];
 }
 + (void) setStagingUrl:(NSString *)stagingUrl {
     if(mPowerAnalytics == nil) {
